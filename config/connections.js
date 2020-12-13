@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
 
     user: 'root',
 
-    password: 'Dengue60',
+    password: '',
     database: 'burgers_db'
 });
 
@@ -16,3 +16,6 @@ connection.connect(function (err) {
     if (err) throw err;
     console.log('Connection successful!')
 });
+
+
+module.exports = connection;
